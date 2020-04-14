@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html>
+    <head>
+     <title>Personal Portfolio</title>
+     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+     <style>
+         body
+         {
+            font-family: 'Poppins', sans-serif;
+            margin:0px;
+         }
+         @media only screen and (max-width: 815px)
+         {
+            #welcome-section h1 
+             {
+               font-size: 3rem;
+             }
+            .contact-links 
+             {
+                display: flex;
+                flex-direction: column;
+             }
+         }
+         h1
+         {
+            font-size: 6rem;
+            font-weight: 700;
+         }
+         #welcome-section p
+         {
+            font-size: 3rem;
+            font-weight: 200;
+            font-style: italic;
+            color: rgb(56, 83, 29);
+         }
+         #navbar
+         {
+             display: flex;
+             justify-content: flex-end;
+             background-color:  rgb(55, 199, 185);
+             width: 100%;
+             position: fixed;
+         }
+         .nav-list
+         {
+            display:flex;
+            margin:0px;
+            padding:0px;
+            
+         }
+         .nav-list > li
+        {
+            list-style-type: none;
+            margin-right: 2rem;
+        }
+        .nav-list > li > a
+        {
+           display:block; 
+           padding: 1.5rem;
+           text-decoration: none;
+           color: white;
+           font-size: 25px;
+        }
+        nav > ul > li > a:hover
+        {
+           background-color: darkcyan;
+        }
+        #welcome-section
+        {
+           display: flex;
+           flex-direction: column;
+           justify-content: center;
+           align-items: center;
+           width: 100%;
+           height: 100vh;
+           background-color:rgb(184, 211, 208);
+           color: white;
+           line-height: 0rem;
+        }
+        #projects
+        {
+            background-color: aquamarine;
+        }
+
+         .project-grid
+         {
+            max-width: 1280px;
+            display: flex;
+            flex-wrap: wrap;  
+            padding: 5% 10%;    
+             
+         }
+         .project-grid a
+         {
+           display: flex;
+           flex-direction: column;
+           align-items: center;
+           text-align: center;
+           width: 30%; 
+           height: 100%; 
+           text-decoration: none;  
+             
+         }
+         .project-tile img
+         {
+            width:100%;
+            height: 350px;
+         }
+         #projects h2
+         {
+            max-width: 33%;
+            margin: 0px auto;
+            border-bottom: 0.2rem solid rgb(56, 83, 29);
+            font-size: 2rem;
+            padding: 2rem 0 0.5rem 0;
+            color: rgb(56, 83, 29);
+
+         }
+         .project-grid a p
+         {
+             width:100%;
+             margin: 0px;
+             padding: 5% 0%;
+             background-color:rgb(240, 218, 47);
+             color:white;
+             font-size: 1.5rem;
+         }
+         .project-grid a p code
+         {   
+             opacity: 0;
+         }
+         .project-grid a:hover p code
+         {
+             opacity: 1;
+             color:rgb(71, 67, 62);
+         }
+         #contacts
+         {
+             background-color: rgb(184, 211, 208);
+             color:white;
+             display: flex;
+             flex-direction: column;
+             justify-content: center;
+             align-items: center;
+             text-align: center;
+             width: 100%;
+             height: 100%;
+             font-size:2rem;
+             padding-bottom: 20px;
+             border-bottom: 5px solid rgb(55, 199, 185); ;
+         }
+         .contact-links a
+         {
+             text-decoration: none;
+             color: white;
+             padding-right:20px;
+
+         }
+         .contact-links a i
+         {
+             padding-right:8px;
+             
+         }
+         footer{
+            background-color:  rgb(184, 211, 208);;
+             color:white;
+             width: 100%;
+             height: 100%;
+             font-size:1.5rem;
+         }
+         footer p{
+             margin: 0;
+             padding: 5% 0% 5% 10%;
+         }
+        
+     </style>
+    </head>
+    <body>
+        <nav id="navbar">
+            <ul class="nav-list">
+                <li><a href="#welcome-section">About</a></li>
+                <li><a href="#projects">Work</a></li>
+                <li><a href="#contacts">Contact</a></li>
+            </ul>
+        </nav>
+        <main>
+            <section id="welcome-section">
+                <h1>Hey I'm Dharani</h1>
+                <p>a web developer</p>
+            </section>
+            <section id="projects">
+                <h2 class="projects-section-header">These are some of my projects</h2>
+                <div class="project-grid">
+                    <a class="project-tile" href="https://codepen.io/freeCodeCamp/full/zNqgVx" target="_blank">
+                        <img src="https://image.shutterstock.com/z/stock-photo-funny-raccoon-showing-a-sign-peace-isolated-on-white-background-1200904669.jpg"/>
+                        <p><code> < </code>Tribute page<code> /> </code></p>
+                    </a>
+                    <a class="project-tile" href="https://codepen.io/Esencia/full/PoPwJWZ" target="_blank">
+                        <img src="https://images.unsplash.com/photo-1563486102732-bee6186757a9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1650&q=80"/>
+                        <p><code> < </code>Survey Form<code> /> </code></p>
+                    </a>
+                    <a class="project-tile" href="https://github.com/dyedavelly/freeCodeCamp" target="_blank">
+                        <img src="https://images.unsplash.com/photo-1525467187333-8e3f68b8e742?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1650&q=80"/>
+                        <p><code> < </code>Github Link<code> /> </code></p>
+                    </a>
+                    <a class="project-tile" href="https://codepen.io/Esencia/full/BaoNNaa" target="_blank">
+                        <img src="https://images.unsplash.com/photo-1470107355970-2ace9f20ab15?ixlib=rb-1.2.1&auto=format&fit=crop&w=1650&q=80"/>
+                        <p><code> < </code>Technical Documentation<code> /> </code></p>
+                    </a>
+                    <a class="project-tile" href="https://codepen.io/Esencia/full/abvzqMr" target="_blank">
+                        <img src="https://images2.minutemediacdn.com/image/upload/c_crop,h_1188,w_2120,x_0,y_227/f_auto,q_auto,w_1100/v1554729678/shape/mentalfloss/58331-istock-479586616.jpg"/>
+                        <p><code> < </code>Product Landing Page<code> /> </code></p>
+                    </a>
+                    <a class="project-tile" href="https://codepen.io/Esencia/full/mdeeVGj" target="_blank">
+                        <img src="https://secure.i.telegraph.co.uk/multimedia/archive/03379/animals-smile_3379238k.jpg"/>
+                        <p><code> < </code>Personal Portfolio<code> /> </code></p>
+                    </a>
+                </div>
+            </section>
+            <section id="contacts">
+                <div class="contact-section-header">
+                    <h2>Let's work together...</h2>
+                    <p>How do you take your coffee?</p>
+                </div>
+                <div class="contact-links">
+                    <a href="https://www.linkedin.com/in/dharaniy/" target="_blank"><i class="fa fa-linkedin"></i>Linkedin</a>
+                    <a href="https://github.com/dyedavelly" id="profile-link" target="_blank"><i class="fa fa-github"></i>Github</a>
+                    <a href="https://www.facebook.com/monica.yedavelly" target="_blank"><i class="fa fa-facebook"></i>Facebook</a>
+                    <a href="mailto:dharani1414@gmail.com" target="_blank"><i class="material-icons">mail</i>Email me</a>
+                    <a href="tel:323-325-1414" target="_blank"><i class="fa fa-phone"></i>Call me</a>
+
+                </div>
+            </section>
+        </main>
+        <footer>
+            <p>**This is just a fake portfolio. All the projects and contact details given are not real.</p>
+        </footer>
+
+    </body>
+</html>
