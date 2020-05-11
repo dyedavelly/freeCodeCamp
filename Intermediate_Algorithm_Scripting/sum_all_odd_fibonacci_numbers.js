@@ -14,7 +14,6 @@ function fibonacci(num)
   var currNumber = 1;
   var temp = 0;
   var arr = [];
-  var i = 1;
   while (currNumber <= num) {
       arr.push(currNumber);
       temp = prevNumber;
