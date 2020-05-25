@@ -5,11 +5,12 @@ function convertToRoman(num) {
     var i=12;     
     while(num > 0)
     {
-      var div = num / num[i];
-      num = num % num[i];
+      var div = num / numbers[i];
+      num = num % numbers[i];
       while( div >= 1)
       {
         romanNumeral+=symbols[i];
+        div--;
       }
       i--;
     }
